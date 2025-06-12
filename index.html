@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stone Paper Scissor Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Page 1: Choice Selection -->
+  <section class="screen" id="selection-screen">
+    <h1>Choose Your Move</h1>
+    <div class="choices">
+      <div class="choice" data-choice="rock">
+        <img src="rock.png" alt="Rock" />
+        <p>Stone</p>
+      </div>
+      <div class="choice" data-choice="paper">
+        <img src="paper.png" alt="Paper" />
+        <p>Paper</p>
+      </div>
+      <div class="choice" data-choice="scissors">
+        <img src="scissors.png" alt="Scissors" />
+        <p>Scissor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 2: Result Display -->
+  <section class="screen hidden" id="result-screen">
+    <h1>Result</h1>
+    <div class="result-container">
+      <div>
+        <h2>You</h2>
+        <img id="user-img" src="" alt="Your choice" />
+        <p  id ="user-text" ></p>
+      </div>
+      <div>
+        <h2>Computer</h2>
+        <img id="computer-img" src="" alt="Computer choice" />
+        <p id="computer-text"></p>
+      </div>
+    </div>
+    <h2 id="final-result">Result: -</h2>
+    <button id="play-again">Play Again</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
